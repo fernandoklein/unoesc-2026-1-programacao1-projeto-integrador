@@ -44,7 +44,7 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: https://g2-backend.onrender.com/api
+        value: https://g2-backend-ey8d.onrender.com/api
     routes:
       - type: rewrite
         source: /*
