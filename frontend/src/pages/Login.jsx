@@ -20,6 +20,7 @@ export default function Login() {
     setCarregando(true);
     try {
       const { data } = await api.post('/auth/login', form);
+      localStorage.setItem('token', data.token);
       localStorage.setItem('usuario', JSON.stringify(data.usuario));
       navigate('/');
     } catch (err) {

@@ -23,6 +23,7 @@ export default function Layout() {
       /* segue para o login mesmo se a chamada falhar */
     }
     localStorage.removeItem('usuario');
+    localStorage.removeItem('token');
     navigate('/login');
   }
 
